@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital@1&family=Poppins&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <h1>WEATHER APP</h1>
+        <div class="tab-all">
+            <div class="tab tab1">Your Weather</div>
+            <div class="tab tab2">Search Weather</div>
+        </div>
+
+        <div class="weather-info">
+
+            <!--grant loction-->
+            <div class="common-cont grant-location-container">
+                <img src="assets/location.png" alt="" width="80" height="80" loading="lazy">
+                <p class="mian">Grant Location Access</p>
+                <p class="main">Allow location access to get weather information</p>
+                <button class="btn" data-grant>Grant Access</button>
+            </div>
+
+            <!--Search Weather-->
+            <div class="search-weather">
+                <input type="text" placeholder="Search for City" search-tab>
+                <button class="search-button">
+                    <img src="assets/search.png" width="20" height="20" loading="lazy">
+                </button>
+            </div>
+
+            <!--loading screen container-->
+            <div class="loading-screen common-cont">
+                <img src="assets/loading.gif" alt="" width="150" height="150">
+                <p>Loading...</p>
+            </div>
+
+            <!--Show weather container-->
+            <div class="show-weather common-cont">
+                <div class="name">
+                    <p city-name class="paraname"></p>
+                    <img country-icon class="paraimg">
+                </div>
+                <p temp-desc class="tempdesc"></p>
+                <img weather-icon class="tempicon">
+                <p data-temperature class="tempo"></p>
+                <div class="more-details">
+                    <div class="cards">
+                        <img src="assets/wind.png">
+                        <p class="moreinfo">Windspeed</p>
+                        <p data-windSpeed></p>
+                    </div>
+                    <div class="cards">
+                        <img src="assets/humidity.png">
+                        <p class="moreinfo">Humidity</p>
+                        <p data-humidity></p>
+                    </div>
+                    <div class="cards">
+                        <img src="assets/cloud.png">
+                        <p class="moreinfo">Clouds</p>
+                        <p data-clouds></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
